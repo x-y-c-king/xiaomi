@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>商品</title>
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../../bootstrap/css/bootstrap-theme.css">
+    <script src="../../bootstrap/jQuery/jquery.min-2.1.1.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/otherFile.css">
+
+    <script src="../js/sessionUser1.js"></script>
+    <script src="../js/showProduce.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row test">
+        <div class="col-lg-offset-1 col-lg-10">
+            <div class="col-lg-7">
+                <nav role="navigation">
+                    <ul class="nav nav-tabs">
+                        <li><a href="#">小米商城</a></li>
+                        <li><a href="#">MIUI</a></li>
+                        <li><a href="#">loT</a></li>
+                        <li><a href="#">云服务</a></li>
+                        <li><a href="#">金融</a></li>
+                        <li><a href="#">有品</a></li>
+                        <li><a href="#">小爱开放平台</a></li>
+                        <li><a href="#">企业团购</a></li>
+                        <li><a href="#">资质证照</a></li>
+                        <li><a href="#">协议规则</a></li>
+                        <li><a href="#">下载app</a></li>
+                        <li><a href="#">SelectLocation</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-offset-1 col-lg-4">
+                <nav role="navigation" class="col-lg-8">
+                    <ul class="nav nav-tabs map">
+                        <li class="col-lg-8">
+                            <div id="userName"><a href="login.html">登录</a><a href="registered.html">注册</a>
+                            </div>
+                        </li>
+                        <li class="col-lg-4"><a href="#">消息通知</a></li>
+                    </ul>
+                </nav>
+                <a href="shoppingCart.html" id="shopping">
+                    <div class="col-lg-4 glyphicon glyphicon-shopping-cart shoppingCart">
+                        购物车
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导航 -->
+    <div class="row navBox">
+        <nav class="col-lg-10 col-lg-offset-1 navbar navbar-default navOutBox" role="navigation">
+            <div class="navbar-header col-lg-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarMenus">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html"><img src="../../images/logo.png" title="小米官网" alt="小米官网"/></a>
+            </div>
+
+            <div class="collapse navbar-collapse col-lg-offset-1 col-lg-8" id="navbarMenus">
+                <ul class="nav navbar-nav navOutBox">
+                    <li><a href="produce.html"><font>全部商品</font></a></li>
+                    <li><a href="produce.html?id=手机"><font>手机</font></a></li>
+                    <li><a href="produce.html?id=穿戴"><font>穿戴</font></a></li>
+                    <li><a href="produce.html?id=笔记本"><font>笔记本</font></a></li>
+                    <li><a href="produce.html?id=家电"><font>家电</font></a></li>
+                    <li><a href="produce.html?id=路由器"><font>路由器</font></a></li>
+                    <li><a href="produce.html?id=配件"><font>智能硬件</font></a></li>
+                    <li><a href="#"><font>服务</font></a></li>
+                    <li><a href="#"><font>社区</font></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 searchBox">
+                <form action="" method="post">
+                    <input type="text" placeholder="Search" class="search col-lg-10"/>
+                    <font class="glyphicon glyphicon-search SearchLogo"></font>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- 内容 -->
+    <div class="row content">
+        <!-- 标题 -->
+        <div class="col-lg-12">
+            <div class="col-lg-offset-2 col-lg-2" ><p>caption 标题</p></div>
+            <div class="col-lg-offset-5 col-lg-1"><p>讨论商品</p></div>
+        </div>
+
+        <!-- 图片 + 内容 -->
+        <div class="col-lg-12 contentRow2">
+            <div class="col-lg-offset-2 col-lg-4" style="text-align: center">
+                <img src="../../images/Redmiauto1A.jpg" />
+            </div>
+            <div class="col-lg-4">
+                <h2 id="caption">Redmi全自动波轮洗衣机1A 8kg</h2>
+                <p id="content">8kg大容量 / 10种洗涤模式 / 10挡水位调节 / 耐腐蚀金属机身 / 桶自洁、桶风干模式避免细菌滋生 / 空气阻尼减震 / 免运费及基础安装费</p>
+                <div class="col-lg-12 price">
+                    <p>小米直营</p>
+                    <p id="price">2799</p>
+                </div>
+                <!-- 地址 -->
+                <div class="col-lg-12">
+                    <div class="address">
+                        <font class="glyphicon glyphicon-map-marker"></font>
+                        <font>重庆市/涪陵区</font>
+                        <span class="btn btn-default" >修改</span>
+                    </div>
+                </div>
+
+                <!-- color -->
+                <div class="col-lg-12">
+                    <div class="col-lg-12 select">
+                        <font class="col-lg-3">选择颜色</font>
+                        <div class="col-lg-4">
+                            <select class="form-control" id="selectOption">
+                                <option value="白色">白色</option>
+                                <option value="黑色">黑色</option>
+                                <option value="金色">金色</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selectNumber col-lg-12">
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">数量</div>
+                        <div class="col-lg-1 btn btn-default less">-</div>
+                        <div class="col-lg-2 showNumber">1</div>
+                        <div class="col-lg-1 btn btn-default add">+</div>
+                    </div>
+
+                </div>
+
+                <!-- button -->
+                <div class="col-lg-12 countBox">
+                    <div class="ok col-lg-12">
+                        <div class="col-lg-9">小米CC9 Pro 8GB+256GB 魔法绿境</div>
+                        <div class="col-lg-3">3499元</div>
+                    </div>
+                    <div class="count col-lg-12"><div class="col-lg-12" id="zongJi">总计：3499元</div></div>
+                </div>
+
+                <div class="button">
+                    <div class="col-lg-6 "><div class="col-lg-offset-1 col-lg-11 btn btn-info addSoppingCart">加入购物车</div></div>
+                    <div class="col-lg-6"><div class="col-lg-11 btn btn-info subGouMai">立即购买</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 bj">
+            <div class="col-lg-offset-2 col-lg-8">
+                <img src="../../images/showGoodsBj.jpg"  />
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer开始 -->
+    <div class="row footerStart">
+        <div class="col-lg-offset-1 col-lg-2"><font class="glyphicon glyphicon-fire"></font>预约维修服务</div>
+        <div class="col-lg-2"><font class="glyphicon glyphicon-fire"></font>七天无理由退货</div>
+        <div class="col-lg-2"><font class="glyphicon glyphicon-fire"></font>15天免费换货</div>
+        <div class="col-lg-2"><font class="glyphicon glyphicon-fire"></font>满150包邮</div>
+        <div class="col-lg-2"><font class="glyphicon glyphicon-fire"></font>520余家售后网店</div>
+    </div>
+    <div class="row footerRow2">
+        <div class="col-lg-offset-1 col-lg-8">
+            <div class="col-lg-2">
+                <h4>帮助中心</h4>
+                <p>账号管理</p>
+                <p>购物指南</p>
+                <p>订单操作</p>
+            </div>
+            <div class="col-lg-2">
+                <h4>服务支持</h4>
+                <p>售后政策</p>
+                <p>自助服务</p>
+                <p>相关下载</p>
+            </div>
+            <div class="col-lg-2">
+                <h4>线下服务</h4>
+                <p>小米之家</p>
+                <p>服务网点</p>
+                <p>授权体验店</p>
+            </div>
+            <div class="col-lg-2">
+                <h4>关于小米</h4>
+                <p>了解小米</p>
+                <p>加入小米</p>
+                <p>投资者关系</p>
+            </div>
+            <div class="col-lg-2">
+                <h4>关注我们</h4>
+                <p>新浪微博</p>
+                <p>官方微信</p>
+                <p>联系我们</p>
+            </div>
+            <div class="col-lg-2">
+                <h4>特色服务</h4>
+                <p>F 码通道</p>
+                <p>礼物码</p>
+                <p>防伪查询</p>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <h3>400-100-5678</h3>
+            <p>周一至周日 8:00-18:00</p>
+            <p>仅收市话费</p>
+            <div class="btn btn-default glyphicon glyphicon-info-sign">人工服务</div>
+        </div>
+
+    </div>
+    <div class="row footerEnd">
+        <div class="col-lg-offset-2 col-lg-8">
+            <p>小米商城 | MIUI | 米家 | 米聊 | 多看 | 游戏 |路由器 | 米粉卡 | 政企服务 | 小米天猫店 | 小米集团隐私政策 |
+                小米公司儿童信息保护规则 | 小米商城隐私政策 | 小米商城用户协议 | 问题反馈 | 廉正举报 | 诚信合规 |
+                Select Location
+            </p>
+            <p>© mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2017]1530-131号</p>
+            <p>（京）网械平台备字（2018）第00005号 互联网药品信息服务资格证 (京) -非经营性-2014-0090 营业执照 医疗器械质量公告</p>
+            <p>增值电信业务许可证  网络食品经营备案（京）【2018】WLSPJYBAHF-12   食品经营许可证</p>
+            <p>违法和不良信息举报电话：185-0130-1238 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试 </p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

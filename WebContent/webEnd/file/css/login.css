@@ -1,0 +1,41 @@
+
+.loginBox{
+    background-image: url("../../images/loginBj.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.loginBox > div:first-child{padding-top: 10px;margin-top: 20px;text-align: center;}
+.loginBox > div{
+    max-width: 450px;
+    padding: 0px 0px 20px 0px;
+    line-height: 50px;
+    background-color: white;
+}
+.loginBox > section{ background-color: white;}
+.loginBox > div input{ border: 1px solid black;max-width: 300px;}
+#login{max-width: 300px;}
+.loginBox > div:last-child input{max-width: 210px}
+.loginBox > div label{max-width: 90px}
+.loginBox > div >div{
+  margin-top: 8px;
+}
+.loginBox > div:nth-last-child(3){
+    padding-bottom: 20px;
+}
+.loginBox > div:nth-last-child(3) > div:first-child{color: #eb9316}
+.loginBox > div:nth-last-child(3) > div:last-child font:last-child{border-left: 1px solid black}
+.loginBox > div:nth-last-child(3) > div:last-child font:hover{color: #eb9316;}
+.loginBox > div:nth-last-child(2){text-align: center;padding-bottom: 0px}
+.loginBox > div:last-child{
+    margin-bottom: 60px;
+}
+.loginBox > div:last-child div:first-child img{width: 100%;}
+.loginBox > div:last-child div:last-child img{width: 70%;margin-top: 15%;}
+.error{
+    height: 50px;
+    background-color: white;
+    margin-top: -20px;
+    padding-bottom: 20px;
+    color: #eea236;
+    display: none;
+}

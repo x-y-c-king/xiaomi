@@ -1,0 +1,35 @@
+.shopping{
+    background-color: #f7f7f7;
+    min-height: 500px;
+}
+.shopping > div{
+    text-align: center;
+}
+.shopping > div:nth-of-type(2){
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.shoppingCartBox > div{
+    font-size: 100px;
+    color: white;
+    background-color:#999999;
+    padding: 40px;
+    border-radius: 100px;
+}
+.shoppingCartBox{text-align: center;margin-top: 120px;}
+.shoppingCartContent{background-color: white;margin-top: 50px}
+.shoppingCartContent  tr{text-align: center;}
+.shoppingCartContent tr:first-child > td{
+    line-height: 30px;
+}
+.shoppingCartContent tr:not(:first-child) > td{
+    height: 50px;
+    line-height: 50px;
+}
+.shoppingCartContent tr:not(:first-child) td:nth-of-type(5) *:not(input){
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
